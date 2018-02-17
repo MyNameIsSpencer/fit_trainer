@@ -35,6 +35,12 @@ const App = () => (
       </Router>
     </header>
 
+    <div class="centre-column">
+      <div class="xer">
+        <p> here is the p tag </p>
+      </div>
+    </div>
+
   </div>
 )
 

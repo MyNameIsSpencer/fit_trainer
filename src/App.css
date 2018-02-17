@@ -1,3 +1,38 @@
+:root {
+  --headerHeight: 40px;
+  --centreWidth: 1000px;
+  }
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: cornsilk;
+}
+
+.left-column {
+  background: linear-gradient(to bottom right, pink, purple);
+  float: left;
+  width: 8%;
+  height: 100%;
+  position: fixed;
+  display: inline;
+}
+
+.centre-column {
+  background: linear-gradient(to bottom right, green, purple);
+  /* float: none; */
+  position: absolute;
+  width: var(--centreWidth);
+  height: 100%;
+  left: 50%;
+  transform: translate(-50%);
+  /* display: inline-block; */
+}
+
+.right-column
+
 .App {
   text-align: center;
 }
@@ -10,14 +45,15 @@
 
 .App-header {
   background: linear-gradient(to bottom right, RGB(0,112,255), rgb(0,219,255));
-  height: 40px;
+  height: var(--headerHeight);
   padding: 20px;
   color: white;
+  z-index: 20;
 }
 
 .small-header {
   background: linear-gradient(to bottom right, RGB(0,112,255), rgb(0,219,255));
-  height: 40px;
+  height: 20px;
   padding: 20px;
   color: white;
 }
@@ -31,6 +67,7 @@
   color: cornsilk;
   text-decoration: none;
   font-size: 30px;
+  padding-right: 25px;
 }
 
 .App-title {
@@ -44,4 +81,8 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+@media (max-width: 750px) {
+
 }
