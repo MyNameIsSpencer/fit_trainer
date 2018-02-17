@@ -7,17 +7,23 @@ import {
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import Home from './Home.js';
+import Services from './Services.js';
+import About from './About.js';
+import Contact from './Contact.js';
 import './App.css';
 
 
 const App = () => (
   <div>
-    <header className="App-header">
+    <header class="App-header">
       <img src={logo} className="App-logo" alt="logo" />
       <Router>
         <div>
           <nav class="nav-header">
-            <Link to="/" class="list-item">Home</Link>{'  '}
+            <Link to="/" class="list-item">Home</Link>
+            <Link to="/services" class="list-item">Services</Link>
+            <Link to="/about" class="list-item">About</Link>
+            <Link to="/contact" class="list-item">Contact</Link>
           </nav>
 
           <Route exact path="/"component={Home} />
