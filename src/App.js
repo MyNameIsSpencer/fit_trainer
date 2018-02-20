@@ -25,7 +25,12 @@ const App = () => (
             <Link to="/about" class="list-item">About</Link>
             <Link to="/contact" class="list-item">Contact</Link>
           </nav>
-
+        </div>
+      </Router>
+    </header>
+    <body>
+      <Router>
+        <div>
           <Route exact path="/"component={Home} />
           <Route path="/services" component={Services} />
           <Route path="/about" component={About} />
@@ -33,11 +38,11 @@ const App = () => (
 
         </div>
       </Router>
-    </header>
+    </body >
 
     <div>
     </div>
-    
+
 
   </div>
 )

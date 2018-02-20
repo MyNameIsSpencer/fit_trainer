@@ -15,7 +15,7 @@ class Home extends Component {
           <img src={thumbsup} alt="thumbsup"/>
         </div>
         <div class="centre-column">
-          <div>
+          <div class="p-tagger">
             <p> here is the p tag </p>
           </div>
         </div>

@@ -1,6 +1,6 @@
 :root {
   --headerHeight: 40px;
-  --centreWidth: 500px;
+  --centreWidth: 700px;
   --topClip: 120px;
   }
 
@@ -12,17 +12,37 @@ body {
   background-color: cornsilk;
 }
 
-.top-pic {
-  /* width:100%;
-  height: 100%; */
-  /* margin-top: 25px; */
+.App-header {
+  background: linear-gradient(to bottom right, RGB(0,112,255), rgb(0,219,255));
+  width: 100%;
+  height: var(--headerHeight);
+  padding: 20px;
+  color: white;
+  z-index: 200;
+  display: block;
+  position: fixed;
 }
 
+.small-header {
+  background: linear-gradient(to bottom right, RGB(0,112,255), rgb(0,219,255));
+  height: 20px;
+  padding: 20px;
+  color: white;
+}
+
+.nav-header {
+  display: none;
+}
+
+
+
 .top-pic img{
+  display: block;
   width: 100%;
+  max-width: 1200px;
   height: auto;
+  padding-top: 80px;
   /* clip-path: inset(15% 0% 20% 0%); */
-  margin-top: calc(var(--headerHeight) - 30px);
   /* margin-top: calc(var(--topClip) * -1); */
 }
 
@@ -41,7 +61,12 @@ body {
   /* display: inline-block; */
 }
 
-.right-column
+.p-tagger {
+  margin: 30px;
+  padding: 30px;
+  background: radial-gradient(red, yellow, green);
+  height: 500px;
+}
 
 .App {
   text-align: center;
@@ -53,36 +78,6 @@ body {
   float: left;
 }
 
-.App-header {
-  background: linear-gradient(to bottom right, RGB(0,112,255), rgb(0,219,255));
-  height: var(--headerHeight);
-  padding: 20px;
-  color: white;
-  z-index: 200;
-}
-
-.small-header {
-  background: linear-gradient(to bottom right, RGB(0,112,255), rgb(0,219,255));
-  height: 20px;
-  padding: 20px;
-  color: white;
-}
-
-.nav-header {
-  float: right;
-}
-
-.list-item {
-  style: none;
-  color: cornsilk;
-  text-decoration: none;
-  font-size: 30px;
-  padding-right: 25px;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
 
 .App-intro {
   font-size: large;
@@ -97,9 +92,26 @@ body {
   :root {
     --centreWidth: 1000px;
     }
+
 }
 
+@media (min-width: 650px) {
+  .dropdown {
+    display: none;
+  }
 
-@media (max-width: 750px) {
+  .nav-header {
+    float: right;
+    display: inline-block;
+    padding-right: 25px;
+  }
+
+  .list-item {
+    style: none;
+    color: cornsilk;
+    text-decoration: none;
+    font-size: 30px;
+    padding-right: 25px;
+  }
 
 }
