@@ -11,11 +11,11 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <div class="top-pic">
+        <div className="top-pic">
           <img src={thumbsup} alt="thumbsup"/>
         </div>
-        <div class="centre-column">
-          <div class="p-tagger">
+        <div className="centre-column">
+          <div className="p-tagger">
             <p> here is the p tag </p>
           </div>
         </div>

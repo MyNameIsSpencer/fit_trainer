@@ -27,6 +27,11 @@ class Helper extends Component {
     }
   }
 
+  render(){
+    return (
+      <div>Im Helper</div>
+    )
+  }
 
 }
 

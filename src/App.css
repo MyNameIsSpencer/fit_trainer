@@ -12,7 +12,7 @@ body {
   background-color: cornsilk;
 }
 
-.App-header {
+header {
   background: linear-gradient(to bottom right, RGB(0,112,255), rgb(0,219,255));
   width: 100%;
   height: var(--headerHeight);
@@ -34,14 +34,67 @@ body {
   display: none;
 }
 
+.hamburg-container {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  z-index: 40;
+  margin-right: 50px;
+  /* float:right; */
+}
 
+.hamburg-paddie {
+  width: 35px;
+  height: 5px;
+  background-color: violet;
+  margin: 6px 0;
+}
+
+.hamburger-dropdown {
+  background-color: lightgreen;
+  border-color: green;
+  border: 5px;
+  width: auto;
+  height: 300px;
+  opacity: 0px;
+  display: inline;
+  position: absolute;
+  right: 20px;
+
+}
+
+.small-nav-header {
+  float: right;
+  display: block;
+  padding-right: 25px;
+}
+
+.small-nav-header li{
+  padding: 10px;
+  float: right;
+  display: block;
+  padding-right: 25px;
+}
+
+.list-item {
+  style: none;
+  color: cornsilk;
+  text-decoration: none;
+  font-size: 30px;
+  padding: 20px;
+  display: block;
+}
+
+.top-pic {
+  display: block;
+}
 
 .top-pic img{
   display: block;
   width: 100%;
   max-width: 1200px;
   height: auto;
-  padding-top: 80px;
+  padding-top: var(--headerHeight);
   /* clip-path: inset(15% 0% 20% 0%); */
   /* margin-top: calc(var(--topClip) * -1); */
 }
@@ -78,11 +131,6 @@ body {
   float: left;
 }
 
-
-.App-intro {
-  font-size: large;
-}
-
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
@@ -96,9 +144,6 @@ body {
 }
 
 @media (min-width: 650px) {
-  .dropdown {
-    display: none;
-  }
 
   .nav-header {
     float: right;
@@ -106,12 +151,8 @@ body {
     padding-right: 25px;
   }
 
-  .list-item {
-    style: none;
-    color: cornsilk;
-    text-decoration: none;
-    font-size: 30px;
-    padding-right: 25px;
+  .hamburg-container, .hamburger-dropdown {
+    display: none;
   }
 
 }
