@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import thumbsup from './pics/thumbsupcrop.jpg';
+import thumbsup from './pics/thumbsup.jpg';
 
 class Home extends Component {
   constructor(props) {

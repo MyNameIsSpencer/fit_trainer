@@ -8,6 +8,7 @@
 body {
   margin: 0;
   padding: 0;
+  padding-top: var(--headerHeight);
   font-family: sans-serif;
   background-color: cornsilk;
 }
@@ -21,6 +22,7 @@ header {
   z-index: 200;
   display: block;
   position: fixed;
+  top: 0;
 }
 
 .small-header {
@@ -86,12 +88,17 @@ header {
 }
 
 .top-pic {
+  position: relative;
   display: block;
-  padding-top: calc((var(--headerHeight)) + 20px);
+  padding-top: 50%;
+  overflow: hidden;
+  /* padding-top: calc((var(--headerHeight)) + 20px); */
 }
 
 .top-pic img{
-  margin-left: -20px;
+  /* margin-left: -20px; */
+  position: absolute;
+  top: 0;
   display: block;
   width: 100%;
   max-width: 1200px;
@@ -147,7 +154,7 @@ header {
 @media (min-width: 650px) {
 
   .top-pic {
-    padding-top: var(--headerHeight);
+    /* padding-top: var(--headerHeight); */
   }
 
   .nav-header {
