@@ -16,7 +16,7 @@ class App extends Component{
     isMenuOpen: false
   }
 
-  openMenu = () => {
+  toggleMenu = () => {
     this.setState({
       isMenuOpen: !this.state.isMenuOpen
     });
@@ -32,7 +32,7 @@ class App extends Component{
         <Link to="/about" className={"list-item"}>About</Link>
         <Link to="/contact" className={"list-item"}>Contact</Link>
       </nav>
-      <div className="hamburg-container" onClick={this.openMenu}>
+      <div className="hamburg-container" onClick={this.toggleMenu}>
         <div className="hamburg-paddie"> </div>
         <div className="hamburg-paddie"> </div>
         <div className="hamburg-paddie"> </div>
@@ -41,10 +41,10 @@ class App extends Component{
       this.state.isMenuOpen? (
           <div className="hamburger-dropdown">
             <nav className="small-nav-header">
-              <Link to="/" className={"drop-item"}>Home</Link>
-              <Link to="/services" className={"drop-item"}>Services</Link>
-              <Link to="/about" className={"drop-item"}>About</Link>
-              <Link to="/contact" className={"drop-item"}>Contact</Link>
+              <Link to="/" className={"drop-item"} onClick={this.toggleMenu}>Home</Link>
+              <Link to="/services" className={"drop-item"} onClick={this.toggleMenu}>Services</Link>
+              <Link to="/about" className={"drop-item"} onClick={this.toggleMenu}>About</Link>
+              <Link to="/contact" className={"drop-item"} onClick={this.toggleMenu}>Contact</Link>
             </nav>
           </div>
         ): null
