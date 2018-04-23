@@ -1,0 +1,21 @@
+.home-ul {
+  display: inline-block;
+}
+
+.home-ul li {
+  list-style: none;
+  font-size: 20px;
+  padding: 12px 5px;
+  margin: 5px 0px;
+  width: 160px;
+  background-color: grey;
+  text-align: center;
+}
+
+
+
+.descriptor {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
