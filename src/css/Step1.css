@@ -1,0 +1,43 @@
+.seperator {
+  border-right: 10px solid firebrick;
+}
+
+.home-ul {
+  display: inline-block;
+}
+
+.home-ul li {
+  list-style: none;
+}
+
+.home-ul li button{
+  font-size: 20px;
+  padding: 12px 5px;
+  margin: 5px 0px;
+  width: 160px;
+  background-color: lightgrey;
+  text-align: center;
+}
+
+.whiteback {
+  background: cornsilk;
+  padding: 0;
+  margin: 0;
+}
+
+.descriptor {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+.home-ul li button:hover{
+  background-color: lightgreen;
+  color: white;
+}
+
+.home-ul li button:focus{
+  background-color: dimgray;
+  color: white;
+  /* border-right: 10px solid firebrick; */
+}
