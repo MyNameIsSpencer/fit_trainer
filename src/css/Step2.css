@@ -1,0 +1,19 @@
+.step2 {
+  background: cornsilk;
+}
+
+.step2 table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.step2 td, .step2 th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.step2 tr:nth-child(even) {
+    background-color: #dddddd;
+}
