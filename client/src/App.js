@@ -16,10 +16,26 @@ class App extends Component{
     super();
 
     this.state = {
+      response: '',
       isMenuOpen: false,
       animationHasStarted: false,
     };
   }
+
+  componentDidMount() {
+    this.callApi()
+      .then(res => this.setState({ response: res.express }))
+      .catch(err => console.log(err));
+  }
+
+  callApi = async () => {
+    const response = await fetch('/api/hello');
+    const body = await response.json();
+
+    if (response.status !== 200) throw Error(body.message);
+
+    return body;
+  };
 
   toggleMenu() {
     this.setState( {
@@ -34,6 +50,7 @@ class App extends Component{
         <h1 className="top-logo">BFH </h1>
         <h2 className="top-info"> PHONE: 647-573-2636 </h2>
         <h2 className="top-info"> EMAIL: biologicfitnessandhealth@gmail.com</h2>
+        <p> { this.state.response } </p>
 
         <div>
           <Route exact path="/"component={Home} />
