@@ -12,12 +12,28 @@ app.get('/api/mail', (req, res) => {
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'youremail@gmail.com',
-      pass: 'yourpassword'
+      user: 'daisyluemailsyou@gmail.com',
+      pass: 'daisylupassword'
     }
   });
 
-  const mailOptions =
-})
+  const mailOptions = {
+    from: 'daisyluemailsyou@gmail.com',
+    to: 'mynameisspencerk@gmail.com',
+    subject: 'Interest in Fitness and Health',
+    text: 'Hellllllooooooo Everybody!!!!'
+  };
+
+  transporter.sendMail(mailOptions, function(error, info){
+    if (error) {
+      console.log(error);
+    } else {
+      console.log('Email sent: ' + info.response);
+    }
+  });
+
+});
+
+
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
