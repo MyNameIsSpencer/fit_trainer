@@ -1,0 +1,22 @@
+form {
+ width: 300px;
+}
+
+input[type="textarea"] {
+ height: 100px;
+ width: 200px;
+}
+
+/* input, select {
+   width: 150px;
+   right: 0px;
+   margin-right: 0px;
+   -webkit-appearance: textfield;
+   background-color: white;
+   cursor: text;
+   padding: 1px;
+   border-width: 2px;
+   border-style: inset;
+   border-color: initial;
+   border-image: initial;
+} */

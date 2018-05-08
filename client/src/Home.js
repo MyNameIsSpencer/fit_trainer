@@ -3,13 +3,30 @@ import thumbsup from './pics/thumbsupcrop.jpg';
 import on_bike_crop from './pics/on_bike_crop.jpg';
 import Step1 from './Step1'
 import Step2 from './Step2'
+import Step3 from './Step3'
 import './css/Home.css';
 
 class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      goal: '',
+      plan: ''
     }
+    this.updateGoal = this.updateGoal.bind(this);
+    this.updatePlan = this.updatePlan.bind(this);
+  }
+
+  updateGoal(e) {
+    this.setState({
+      goal: e
+    })
+  }
+
+  updatePlan(e) {
+    this.setState({
+      plan: e
+    })
   }
 
   render() {
@@ -27,20 +44,11 @@ class Home extends Component {
           </p>
 
           <div>
-            <div>
-              <Step1 />
-            </div>
-
-            <h2>
-
-            </h2>
-            <Step2 />
-            <h2 className="lefter">
-              Step 3 Contact BFH Wellness Coach!:
-            </h2>
+            <Step1 myGoal={this.updateGoal}/>
+            <Step2 myPlan={this.updatePlan}/>
+            <Step3 goal={this.state.goal} plan={this.state.plan}/>
           </div>
         </div>
-
       </div>
     )
 
