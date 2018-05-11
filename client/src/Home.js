@@ -35,7 +35,7 @@ class Home extends Component {
         <div className="top-pic">
           <img src={thumbsup} alt="thumbsup"/>
         </div>
-        {/*<h2 className="titler"> BioLogic Fitness and Health </h2>*/}
+        <h2 className="titler"> BioLogic Fitness and Health </h2>
         <div className="centre-column">
           <h3> Reinvigorate Your Life! </h3>
           <p>
@@ -51,10 +51,7 @@ class Home extends Component {
         </div>
       </div>
     )
-
-
   }
-
 }
 
 export default Home;

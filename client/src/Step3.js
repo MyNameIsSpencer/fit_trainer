@@ -30,59 +30,60 @@ class Step3 extends Component {
   render() {
     return(
       <div>
-              <h2 className="lefter">
-                Step 3 Contact BFH Wellness Coach!
-              </h2>
-              <div>
-                <form className="lefter">
-                  <label>
-                    Name {' '}
-                    <input type="text" placeholder="Name" value={this.state.name} />
-                  </label>
-                  <br />
-                  <label>
-                    Email {' '}
-                    <input type="email" placeholder="Email" value={this.state.email}/>
-                  </label>
-                  <br />
-                 <label>
-                    Phone {' '}
-                    <input type="tel" placeholder="Phone" value={this.state.phone}/>
-                  </label>
-                  <br />
+        <h2 className="lefter">
+          Step 3 Contact BFH Wellness Coach!
+        </h2>
+        <div>
+          <form className="lefter">
+            <label>
+              Name {' '}
+              <input type="text" placeholder="Name" value={this.state.name} />
+            </label>
+            <br />
+            <label>
+              Email {' '}
+              <input type="email" placeholder="Email" value={this.state.email}/>
+            </label>
+            <br />
+           <label>
+              Phone {' '}
+              <input type="tel" placeholder="Phone" value={this.state.phone}/>
+            </label>
+            <br />
 
-                  <label>
-                    Goal {' '}
-                    <select name="goals">
-                      <option value="loseWeight">Lose Weight </option>
-                      <option value="reduceStress">Reduce Stress </option>
-                      <option value="improveHealth">Improve Health </option>
-                      <option value="getFitter">Get Fitter </option>
-                      <option value="notSure">Not Sure </option>
-                    </select>
-                  </label>
-                  <br />
+            <label>
+              Goal {' '}
+              <select name="goals">
+                <option value="loseWeight">Lose Weight </option>
+                <option value="reduceStress">Reduce Stress </option>
+                <option value="improveHealth">Improve Health </option>
+                <option value="getFitter">Get Fitter </option>
+                <option value="notSure">Not Sure </option>
+              </select>
+            </label>
+            <br />
 
-                  <label>
-                    Plan {' '}
-                    <select name="goals">
-                      <option>Plan 1 </option>
-                      <option>Plan 2 </option>
-                      <option>Plan 3 </option>
-                      <option>Plan 4 </option>
-                      <option>Plan 5 </option>
-                    </select>
-                  </label>
-                  <br />
+            <label>
+              Plan {' '}
+              <select name="goals">
+                <option>Plan 1 </option>
+                <option>Plan 2 </option>
+                <option>Plan 3 </option>
+                <option>Plan 4 </option>
+                <option>Plan 5 </option>
+              </select>
+            </label>
+            <br />
 
-                  <label>
-                    Message {' '}
-                  </label>
-                  <br />
-                  <input type="textarea" placeholder="Include a message here if you'd like" value={this.state.message}/>
-                </form>
-              </div>
-            </div>
+            <label>
+              Message {' '}
+            </label>
+            <br />
+            <input type="textarea" placeholder="Include a message here if you'd like" value={this.state.message}/>
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
     )
   }
 }
