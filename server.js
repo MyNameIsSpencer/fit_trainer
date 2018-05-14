@@ -11,9 +11,12 @@ app.get('/api/hello', (req, res) => {
 });
 */}
 
-app.use(cors())
+app.use(cors());
+app.use(express.json());
 
 app.post('/api/mail', (req, res) => {
+  console.log(req.body);
+
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
@@ -26,7 +29,7 @@ app.post('/api/mail', (req, res) => {
     from: 'daisyluemailsyou@gmail.com',
     to: 'mynameisspencerk@gmail.com',
     subject: 'Interest in Fitness and Health',
-    text: 'Come on down to FUnky TOWN!!!!'
+    text: `Hi ${req.body.name},\n\n${req.body.message}`
   };
 
   transporter.sendMail(mailOptions, function(error, info){

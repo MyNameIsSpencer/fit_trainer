@@ -19,13 +19,13 @@ class Home extends Component {
 
   updateGoal(e) {
     this.setState({
-      goal: e
+      goal: e.target.value
     })
   }
 
   updatePlan(e) {
     this.setState({
-      plan: e
+      plan: e.target.value
     })
   }
 
@@ -44,8 +44,8 @@ class Home extends Component {
           </p>
 
           <div>
-            <Step1 myGoal={this.updateGoal}/>
-            <Step2 myPlan={this.updatePlan}/>
+            <Step1 updateGoal={this.updateGoal}/>
+            <Step2 updatePlan={this.updatePlan}/>
             <Step3 goal={this.state.goal} plan={this.state.plan}/>
           </div>
         </div>

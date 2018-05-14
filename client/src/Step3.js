@@ -19,19 +19,43 @@ class Step3 extends Component {
       name: '',
       email: '',
       phone: '',
-      goal: '',
-      plan: '',
       message: ''
     }
+    this.handleContactFormSubmit = this.handleContactFormSubmit.bind(this);
   }
 
   handleContactFormSubmit(e) {
     e.preventDefault();
-    fetch('http://localhost:5000/api/mail')
+    // const message = {
+    //   name: this.state.name,
+    //   email: this.state.email,
+    //   phone: this.state.phone,
+    //   goal: this.props.goal,
+    //   plan: this.props.plan,
+    //   message: this.state.message
+    // }
+    const message = {
+      ...this.state,
+      ...this.props
+    }
+    fetch('http://localhost:5000/api/mail', {
+      method: 'POST',
+      body: JSON.stringify(message),
+      headers: new Headers({
+        'Content-Type': 'application/json'
+      })
+    })
     .then(res => {
       console.log('HuurrAAAYYY');
     })
+  }
 
+  onChange(e) {
+    e.preventDefault();
+    const key = e.target.getAttribute('name');
+    this.setState({
+      [key]: e.target.value
+    })
   }
 
   render() {
@@ -44,35 +68,35 @@ class Step3 extends Component {
           <form className="lefter">
             <label>
               Name {' '}
-              <input type="text" placeholder="Name" value={this.state.name} />
+              <input type="text" name='name' placeholder="Name" onChange={e => this.onChange(e)} value={this.state.name} />
             </label>
             <br />
             <label>
               Email {' '}
-              <input type="email" placeholder="Email" value={this.state.email}/>
+              <input type="email" name='email' placeholder="Email" onChange={e => this.onChange(e)} value={this.state.email}/>
             </label>
             <br />
            <label>
               Phone {' '}
-              <input type="tel" placeholder="Phone" value={this.state.phone}/>
+              <input type="tel" name='phone' placeholder="Phone" onChange={e => this.onChange(e)} value={this.state.phone}/>
             </label>
             <br />
 
             <label>
               Goal {' '}
               <select name="goals">
-                <option value="loseWeight">Lose Weight </option>
-                <option value="reduceStress">Reduce Stress </option>
-                <option value="improveHealth">Improve Health </option>
-                <option value="getFitter">Get Fitter </option>
-                <option value="notSure">Not Sure </option>
+                <option value="loseWeight" selected={this.props.goal === 'loseWeight'}>Lose Weight </option>
+                <option value="reduceStress" selected={this.props.goal === 'reduceStress'}>Reduce Stress </option>
+                <option value="improveHealth" selected={this.props.goal === 'improveHealth'}>Improve Health </option>
+                <option value="getFitter" selected={this.props.goal === 'getFitter'}>Get Fitter </option>
+                <option value="notSure" selected={this.props.goal === 'notSure'} >Not Sure </option>
               </select>
             </label>
             <br />
 
             <label>
               Plan {' '}
-              <select name="goals">
+              <select name="plans">
                 <option>Plan 1 </option>
                 <option>Plan 2 </option>
                 <option>Plan 3 </option>
@@ -86,7 +110,7 @@ class Step3 extends Component {
               Message {' '}
             </label>
             <br />
-            <input type="textarea" placeholder="Include a message here if you'd like" value={this.state.message}/>
+            <input type="textarea" name='message' placeholder="Include a message here if you'd like" onChange={e => this.onChange(e)} value={this.state.message}/>
             <input onClick={this.handleContactFormSubmit}  type="submit" value="Submit" />
           </form>
         </div>
