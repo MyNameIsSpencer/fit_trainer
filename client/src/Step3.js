@@ -23,9 +23,16 @@ class Step3 extends Component {
       plan: '',
       message: ''
     }
-
   }
 
+  handleContactFormSubmit(e) {
+    e.preventDefault();
+    fetch('http://localhost:5000/api/mail')
+    .then(res => {
+      console.log('HuurrAAAYYY');
+    })
+
+  }
 
   render() {
     return(
@@ -80,7 +87,7 @@ class Step3 extends Component {
             </label>
             <br />
             <input type="textarea" placeholder="Include a message here if you'd like" value={this.state.message}/>
-            <input type="submit" value="Submit" />
+            <input onClick={this.handleContactFormSubmit}  type="submit" value="Submit" />
           </form>
         </div>
       </div>
