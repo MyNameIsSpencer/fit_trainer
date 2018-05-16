@@ -29,7 +29,13 @@ app.post('/api/mail', (req, res) => {
     from: 'daisyluemailsyou@gmail.com',
     to: 'mynameisspencerk@gmail.com',
     subject: 'Interest in Fitness and Health',
-    text: `Hi ${req.body.name},\n\n${req.body.message}`
+    text: `Hi, my name is ${req.body.name},\n\n
+      My email is: ${req.body.email} \n\n
+      My phone number is: ${req.body.phone} \n\n
+      I want to: ${req.body.goal} \n\n
+      I want plan: ${req.body.plan} \n\n
+      Message: 
+      ${req.body.message}`
   };
 
   transporter.sendMail(mailOptions, function(error, info){

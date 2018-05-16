@@ -34,13 +34,13 @@ class Step3 extends Component {
     //   plan: this.props.plan,
     //   message: this.state.message
     // }
-    const message = {
+    const emailPackage = {
       ...this.state,
       ...this.props
     }
     fetch('http://localhost:5000/api/mail', {
       method: 'POST',
-      body: JSON.stringify(message),
+      body: JSON.stringify(emailPackage),
       headers: new Headers({
         'Content-Type': 'application/json'
       })
