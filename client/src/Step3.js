@@ -97,11 +97,12 @@ class Step3 extends Component {
             <label>
               Plan {' '}
               <select name="plans">
-                <option>Plan 1 </option>
-                <option>Plan 2 </option>
-                <option>Plan 3 </option>
-                <option>Plan 4 </option>
-                <option>Plan 5 </option>
+                <option value="plan1" selected={this.props.plan === 'plan1'}>Plan 1 </option>
+                <option value="plan2" selected={this.props.plan === 'plan2'}>Plan 2 </option>
+                <option value="plan3" selected={this.props.plan === 'plan3'}>Plan 3 </option>
+                <option value="plan4" selected={this.props.plan === 'plan4'}>Plan 4 </option>
+                <option value="plan5" selected={this.props.plan === 'plan5'}>Plan 5 </option>
+
               </select>
             </label>
             <br />

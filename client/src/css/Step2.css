@@ -1,3 +1,38 @@
+.seperator {
+  border-right: 10px solid firebrick;
+}
+
+.home-ul {
+  display: inline-block;
+}
+
+.home-ul li {
+  list-style: none;
+}
+
+.seperator button{
+  font-size: 20px;
+  padding: 12px 5px;
+  margin: 5px 0px;
+  width: 160px;
+  background-color: lightgrey;
+  text-align: center;
+}
+
+.seperator button:hover{
+  background-color: lightgreen;
+  color: white;
+}
+
+.seperator button:focus{
+  background-color: dimgray;
+  color: white;
+  /* border-right: 10px solid firebrick; */
+}
+
+
+
+
 .step2 {
   background: cornsilk;
 }

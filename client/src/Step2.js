@@ -6,6 +6,10 @@ class Step2 extends Component {
     super(props)
   }
 
+  handleClick (e) {
+    this.props.updatePlan(e)
+  }
+
   render() {
     return(
       <div className="step2">
@@ -16,8 +20,8 @@ class Step2 extends Component {
         <table>
           <tbody>
             <tr>
-              <th>
-                Plan 1
+              <th className="seperator">
+                <button value="plan1" onClick={(e) => this.handleClick(e)}> Plan 1</button>
               </th>
               <th>
               </th>
@@ -27,8 +31,8 @@ class Step2 extends Component {
               </th>
             </tr>
             <tr>
-              <th>
-                Plan 2
+              <th className="seperator">
+                <button value="plan2" onClick={(e) => this.handleClick(e)}> Plan 2 </button>
               </th>
               <th>
               </th>
@@ -38,8 +42,8 @@ class Step2 extends Component {
               </th>
             </tr>
             <tr>
-              <th>
-                Plan 3
+              <th className="seperator">
+                <button value="plan3" onClick={(e) => this.handleClick(e)}> Plan 3 </button>
               </th>
               <th>
               </th>
@@ -49,8 +53,8 @@ class Step2 extends Component {
               </th>
             </tr>
             <tr>
-              <th>
-                Plan 4
+              <th className="seperator">
+                <button value="plan4" onClick={(e) => this.handleClick(e)}> Plan 4 </button>
               </th>
               <th>
               </th>
@@ -60,8 +64,8 @@ class Step2 extends Component {
               </th>
             </tr>
             <tr>
-              <th>
-                Plan 5
+              <th className="seperator">
+                <button value="plan5" onClick={(e) => this.handleClick(e)}> Plan 5 </button>
               </th>
               <th>
               </th>

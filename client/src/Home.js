@@ -10,8 +10,8 @@ class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      goal: '',
-      plan: ''
+      goal: 'Not Sure',
+      plan: 'None'
     }
     this.updateGoal = this.updateGoal.bind(this);
     this.updatePlan = this.updatePlan.bind(this);

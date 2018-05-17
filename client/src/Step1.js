@@ -38,15 +38,15 @@ class Step1 extends Component {
             <tr>
               <th className="seperator">
                 <ul className="home-ul">
-                  <li><button value="loseWeight" onClick={(e, loseWeight) => this.handleClick(e, optionDescriptions.loseWeight)}>
+                  <li><button value="loseWeight" onClick={(e) => this.handleClick(e, optionDescriptions.loseWeight)}>
                       Lose Weight </button></li>
-                  <li><button value="reduceStress" onClick={(e, loseWeight) => this.handleClick(e, optionDescriptions.reduceStress)}>
+                  <li><button value="reduceStress" onClick={(e) => this.handleClick(e, optionDescriptions.reduceStress)}>
                       Reduce Stress</button></li>
-                  <li><button value="improveHealth" onClick={(e, loseWeight) => this.handleClick(e, optionDescriptions.improveHealth)}>
+                  <li><button value="improveHealth" onClick={(e) => this.handleClick(e, optionDescriptions.improveHealth)}>
                     Improve Health</button></li>
-                  <li><button value="getFitter" onClick={(e, loseWeight) => this.handleClick(e, optionDescriptions.getFitter)}>
+                  <li><button value="getFitter" onClick={(e) => this.handleClick(e, optionDescriptions.getFitter)}>
                     Get Fitter</button></li>
-                  <li><button value="notSure" onClick={(e, loseWeight) => this.handleClick(e, optionDescriptions.notSure)}>
+                  <li><button value="notSure" onClick={(e) => this.handleClick(e, optionDescriptions.notSure)}>
                     Not Sure</button></li>
                 </ul>
               </th>

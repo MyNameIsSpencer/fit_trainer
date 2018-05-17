@@ -27,14 +27,14 @@ app.post('/api/mail', (req, res) => {
 
   const mailOptions = {
     from: 'daisyluemailsyou@gmail.com',
-    to: 'mynameisspencerk@gmail.com',
+    to: 'biologicfitnessandhealth@gmail.com',
     subject: 'Interest in Fitness and Health',
     text: `Hi, my name is ${req.body.name},\n\n
       My email is: ${req.body.email} \n\n
       My phone number is: ${req.body.phone} \n\n
       I want to: ${req.body.goal} \n\n
       I want plan: ${req.body.plan} \n\n
-      Message: 
+      Message:
       ${req.body.message}`
   };
 
