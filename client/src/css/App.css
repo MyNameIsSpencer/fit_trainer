@@ -2,6 +2,7 @@
   --headerHeight: 100px;
   --headerMinHeight: 30px;
   --centreWidth: 700px;
+  --centreMargin: calc((100vw - var(--centreWidth))/2);
   --topClip: 120px;
   }
 
@@ -27,12 +28,29 @@ header {
   top: 0;
 }
 
+.centre-column {
+  display: inline-block;
+  /* background: linear-gradient(to bottom right, pink, purple); */
+  margin-left: var(--centreMargin);
+  height: 100%;
+  width: var(--centreWidth);
+  text-align: center;
+}
+
+.heading {
+  font-family: helvetica, arial;
+  font-size: 30px;
+  text-align: left;
+  color: rgb(230,168,23);
+}
+
 .bottom-footer {
+  padding: 20px var(centreMargin);
   margin-top: 100px;
   bottom: 0;
-  height: 400px;
-  width: 100vw;
-  background-color: fuchsia;
+  height: 150px;
+  width: 100%;
+  background-color: RGB(230,168,23);
 
 }
 

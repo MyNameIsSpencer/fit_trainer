@@ -2,9 +2,46 @@ form {
  width: 300px;
 }
 
+label {
+  text-align: left;
+  display: inline-block;
+  width: 200px;
+  text-align: right;
+}
+
+input, select {
+  margin-bottom: 6px;
+}
+
+input[type="submit"] {
+  display: block;
+  margin-top: 10px;
+  margin-left: 11%;
+  border: 5px inset green;
+  background-color: lightgreen;
+  font-size: 20px;
+  color: white;
+  width: 200px;
+  height: 40px;
+
+}
+
+select {
+  width: 123px;
+  padding-bottom: 5px;
+}
+
+input[type="text email tel"] {
+  width: 120px;
+}
+
 input[type="textarea"] {
  height: 100px;
  width: 200px;
+}
+
+.message-label {
+  text-align: left;
 }
 
 .step3-form {
@@ -14,11 +51,14 @@ input[type="textarea"] {
 }
 
 .left-wrapper {
+  width: 30%;
   display: inline-block;
   vertical-align: top;
 }
 
 .message-wrapper {
+  width: 35%;
+  margin-left: 30px;
   display: inline-block;
   vertical-align: top;
 }

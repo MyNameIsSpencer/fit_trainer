@@ -41,15 +41,6 @@ h2 {
   text-align: left;
 }
 
-.centre-column {
-  display: inline-block;
-  background: linear-gradient(to bottom right, pink, purple);
-  margin-left: calc((100vw - var(--centreWidth))/2);
-  height: 100%;
-  width: var(--centreWidth);
-  text-align: center;
-}
-
 li {
   text-align: left;
 }
