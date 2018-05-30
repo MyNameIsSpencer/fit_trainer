@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import thumbsup from './pics/thumbsupcrop.jpg';
 import on_bike_crop from './pics/on_bike_crop.jpg';
-import Step1 from './Step1'
-import Step2 from './Step2'
-import Step3 from './Step3'
+import Step1 from './Step1';
+import Step2 from './Step2';
+import Step3 from './Step3';
 import './css/Home.css';
 
 class Home extends Component {
@@ -49,6 +49,7 @@ class Home extends Component {
             <Step3 goal={this.state.goal} plan={this.state.plan}/>
           </div>
         </div>
+
       </div>
     )
   }

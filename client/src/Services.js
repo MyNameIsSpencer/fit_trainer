@@ -10,7 +10,7 @@ class Services extends Component {
   render() {
     return (
       <div>
-        Hi Spencer
+        Here's a bunch of services that I know you'll like.
       </div>
     )
   }

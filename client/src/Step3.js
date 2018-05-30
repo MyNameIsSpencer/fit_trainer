@@ -62,59 +62,59 @@ class Step3 extends Component {
     return(
       <div>
         <h2 className="lefter">
-          Step 3 Contact BFH Wellness Coach!
+          <b className="spacer">Step 3   </b> Contact BFH Wellness Coach!
         </h2>
-        <div>
-          <form className="lefter">
-            <label>
-              Name {' '}
-              <input type="text" name='name' placeholder="Name" onChange={e => this.onChange(e)} value={this.state.name} />
-            </label>
-            <br />
-            <label>
-              Email {' '}
-              <input type="email" name='email' placeholder="Email" onChange={e => this.onChange(e)} value={this.state.email}/>
-            </label>
-            <br />
-           <label>
-              Phone {' '}
-              <input type="tel" name='phone' placeholder="Phone" onChange={e => this.onChange(e)} value={this.state.phone}/>
-            </label>
-            <br />
+          <form className="step3-form">
+            <div className="left-wrapper">
+              <label>
+                Name {' '}
+                <input type="text" name='name' placeholder="Name" onChange={e => this.onChange(e)} value={this.state.name} />
+              </label>
+              <br />
+              <label>
+                Email {' '}
+                <input type="email" name='email' placeholder="Email" onChange={e => this.onChange(e)} value={this.state.email}/>
+              </label>
+              <br />
+             <label>
+                Phone {' '}
+                <input type="tel" name='phone' placeholder="Phone" onChange={e => this.onChange(e)} value={this.state.phone}/>
+              </label>
+              <br />
 
-            <label>
-              Goal {' '}
-              <select name="goals">
-                <option value="loseWeight" selected={this.props.goal === 'loseWeight'}>Lose Weight </option>
-                <option value="reduceStress" selected={this.props.goal === 'reduceStress'}>Reduce Stress </option>
-                <option value="improveHealth" selected={this.props.goal === 'improveHealth'}>Improve Health </option>
-                <option value="getFitter" selected={this.props.goal === 'getFitter'}>Get Fitter </option>
-                <option value="notSure" selected={this.props.goal === 'notSure'} >Not Sure </option>
-              </select>
-            </label>
-            <br />
+              <label>
+                Goal {' '}
+                <select name="goals">
+                  <option value="loseWeight" selected={this.props.goal === 'loseWeight'}>Lose Weight </option>
+                  <option value="reduceStress" selected={this.props.goal === 'reduceStress'}>Reduce Stress </option>
+                  <option value="improveHealth" selected={this.props.goal === 'improveHealth'}>Improve Health </option>
+                  <option value="getFitter" selected={this.props.goal === 'getFitter'}>Get Fitter </option>
+                  <option value="notSure" selected={this.props.goal === 'notSure'} >Not Sure </option>
+                </select>
+              </label>
+              <br />
 
-            <label>
-              Plan {' '}
-              <select name="plans">
-                <option value="plan1" selected={this.props.plan === 'plan1'}>Plan 1 </option>
-                <option value="plan2" selected={this.props.plan === 'plan2'}>Plan 2 </option>
-                <option value="plan3" selected={this.props.plan === 'plan3'}>Plan 3 </option>
-                <option value="plan4" selected={this.props.plan === 'plan4'}>Plan 4 </option>
-                <option value="plan5" selected={this.props.plan === 'plan5'}>Plan 5 </option>
+              <label>
+                Plan {' '}
+                <select name="plans">
+                  <option value="plan1" selected={this.props.plan === 'plan1'}>Plan 1 </option>
+                  <option value="plan2" selected={this.props.plan === 'plan2'}>Plan 2 </option>
+                  <option value="plan3" selected={this.props.plan === 'plan3'}>Plan 3 </option>
+                  <option value="plan4" selected={this.props.plan === 'plan4'}>Plan 4 </option>
+                  <option value="plan5" selected={this.props.plan === 'plan5'}>Plan 5 </option>
 
-              </select>
-            </label>
-            <br />
-
-            <label>
-              Message {' '}
-            </label>
-            <br />
-            <input type="textarea" name='message' placeholder="Include a message here if you'd like" onChange={e => this.onChange(e)} value={this.state.message}/>
-            <input onClick={this.handleContactFormSubmit}  type="submit" value="Submit" />
+                </select>
+              </label>
+            </div>
+            <div className="message-wrapper">
+              <label>
+                Message <br/>
+              </label>
+              <input type="textarea" name='message' placeholder="Include a message here if you'd like" onChange={e => this.onChange(e)} value={this.state.message}/>
+              <input onClick={this.handleContactFormSubmit}  type="submit" value="Submit" />
+            </div>
           </form>
-        </div>
+
       </div>
     )
   }

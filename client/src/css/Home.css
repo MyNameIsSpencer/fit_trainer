@@ -2,6 +2,11 @@ h2 {
   text-align: center;
 }
 
+.spacer {
+  white-space: pre;
+  color: rgb(230,170,0);
+}
+
 .top-pic {
   position: relative;
   display: block;
@@ -37,21 +42,13 @@ h2 {
 }
 
 .centre-column {
+  display: inline-block;
   background: linear-gradient(to bottom right, pink, purple);
-  position: absolute;
-  margin-top: -20px;
-  width: var(--centreWidth);
+  margin-left: calc((100vw - var(--centreWidth))/2);
   height: 100%;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-  -moz-transform: translate(-50%);
-  -o-transform: translate(-50%);
-  -ms-transform: translate(-50%);
-  transform: translate(-50%);
+  width: var(--centreWidth);
   text-align: center;
-  /* display: inline-block; */
 }
-
 
 li {
   text-align: left;

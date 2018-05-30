@@ -9,6 +9,7 @@ import Services from './Services.js';
 import About from './About.js';
 import FitTips from './FitTips.js';
 import Header from './Header.js';
+import Footer from './Footer.js';
 import './css/App.css';
 
 class App extends Component{
@@ -51,13 +52,13 @@ class App extends Component{
         <h2 className="top-info"> PHONE: 647-573-2636 </h2>
         <h2 className="top-info"> EMAIL: biologicfitnessandhealth@gmail.com</h2>
         <p> { this.state.response } </p>
-
         <div>
           <Route exact path="/"component={Home} />
           <Route path="/services" component={Services} />
           <Route path="/about" component={About} />
           <Route path="/fittips" component={FitTips} />
         </div>
+        <Footer />
       </div>
     );
   }

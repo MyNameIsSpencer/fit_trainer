@@ -1,0 +1,9 @@
+.big-footer {
+  display: block;
+  height: 200px;
+  width: 100%;
+  background-color: fuchsia;
+  position: absolute;
+  bottom: 0px;
+  margin-top: 100px;
+}

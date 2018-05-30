@@ -31,7 +31,7 @@ class Step1 extends Component {
     return (
       <div className="whiteback">
         <h2 className="lefter">
-          Step 1 Choose Your Goal: "I want to..."
+          <b className="spacer">Step 1    </b>Choose Your Goal: "I want to..."
         </h2>
         <table>
           <tbody>

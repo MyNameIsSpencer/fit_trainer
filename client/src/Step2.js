@@ -14,7 +14,7 @@ class Step2 extends Component {
     return(
       <div className="step2">
         <h2 className="lefter">
-          Step 2 Review Services and Pricing:
+          <b className="spacer">Step 2   </b> Review Services and Pricing:
         </h2>
         <p> All Plans Come With Free Consultation! </p>
         <table>
