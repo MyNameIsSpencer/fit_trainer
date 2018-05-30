@@ -9,9 +9,9 @@ const Footer = (props) => {
 
       <p>
 
-        Phone us at: 647-573-2636<br/><br/>
+        Phone us at   <b>  647-573-2636</b><br/><br/>
 
-        or email: biologicfitnessandhealth@gmail.com<br/><br/>
+        or email          <b> biologicfitnessandhealth@gmail.com</b><br/><br/>
 
 
       </p>

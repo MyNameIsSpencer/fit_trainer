@@ -52,7 +52,7 @@ class App extends Component{
         <h2 className="top-info"> PHONE: 647-573-2636 </h2>
         <h2 className="top-info"> EMAIL: biologicfitnessandhealth@gmail.com</h2>
         <p> { this.state.response } </p>
-        <div>
+        <div className="header-navigation">
           <Route exact path="/"component={Home} />
           <Route path="/services" component={Services} />
           <Route path="/about" component={About} />
