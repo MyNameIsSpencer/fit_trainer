@@ -11,6 +11,7 @@ label {
 
 input, select {
   margin-bottom: 6px;
+  height: 15px;
 }
 
 input[type="submit"] {
