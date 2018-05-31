@@ -39,17 +39,24 @@ class Home extends Component {
         <div className="centre-column">
           <h3> Reinvigorate Your Life! </h3>
           <p>
-            {"We specialize in Health and Fitness programs for individuals age 50+."}
-            {" Your needs are unique, and we'll help you reach them!"}
+            We specialize in Health and Fitness programs for individuals age 50+.
+             Your needs are unique, and we will help you reach them!
+             <br/>
+             <br/>
+             <br/>
           </p>
-
-          <div>
-            <Step1 updateGoal={this.updateGoal}/>
+        </div>
+        <div className="centre-column">
+          <Step1 updateGoal={this.updateGoal}/>
+        </div>
+        <div className="home-background">
+          <div className="centre-column">
             <Step2 updatePlan={this.updatePlan}/>
-            <Step3 goal={this.state.goal} plan={this.state.plan}/>
           </div>
         </div>
-
+        <div className="centre-column">
+          <Step3 goal={this.state.goal} plan={this.state.plan}/>
+        </div>
       </div>
     )
   }

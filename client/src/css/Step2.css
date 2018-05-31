@@ -30,11 +30,14 @@
   /* border-right: 10px solid firebrick; */
 }
 
-
+.step2-spacer {
+  white-space: pre;
+  color: cornsilk;
+}
 
 
 .step2 {
-  background: cornsilk;
+  background: rgb(230,168,23);
 }
 
 .step2 table {

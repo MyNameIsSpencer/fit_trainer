@@ -49,8 +49,8 @@ class App extends Component{
       <div>
         <Header toggleMenu={this.toggleMenu.bind( this )} isMenuOpen={this.state.isMenuOpen}/>
         <h1 className="top-logo">BFH </h1>
-        <h2 className="top-info"> PHONE: 647-573-2636 </h2>
-        <h2 className="top-info"> EMAIL: biologicfitnessandhealth@gmail.com</h2>
+        <h2 className="top-info"> East Scarborough / Pickering <b>|</b> 647-573-2636 <b>|</b> biologicfitnessandhealth@gmail.com</h2>
+        {/*<h2 className="top-info"> E: biologicfitnessandhealth@gmail.com</h2>*/}
         <p> { this.state.response } </p>
         <div className="header-navigation">
           <Route exact path="/"component={Home} />

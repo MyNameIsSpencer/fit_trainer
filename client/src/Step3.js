@@ -85,7 +85,7 @@ class Step3 extends Component {
 
                 <label>
                   Goal {' '}
-                  <select name="goals">
+                  <select className="step3-select" name="goals">
                     <option value="loseWeight" selected={this.props.goal === 'loseWeight'}>Lose Weight </option>
                     <option value="reduceStress" selected={this.props.goal === 'reduceStress'}>Reduce Stress </option>
                     <option value="improveHealth" selected={this.props.goal === 'improveHealth'}>Improve Health </option>
@@ -97,7 +97,7 @@ class Step3 extends Component {
 
                 <label>
                   Plan {' '}
-                  <select name="plans">
+                  <select className="step3-select" name="plans">
                     <option value="plan1" selected={this.props.plan === 'plan1'}>Plan 1 </option>
                     <option value="plan2" selected={this.props.plan === 'plan2'}>Plan 2 </option>
                     <option value="plan3" selected={this.props.plan === 'plan3'}>Plan 3 </option>

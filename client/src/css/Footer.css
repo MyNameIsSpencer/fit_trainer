@@ -1,3 +1,12 @@
+.bottom-footer {
+  padding: 20px var(--centreMargin);
+  margin-top: 2%;
+  bottom: 0;
+  height: 150px;
+  width: 100%;
+  background-color: RGB(230,168,23);
+}
+
 .big-footer {
   display: block;
   height: 200px;
@@ -6,4 +15,31 @@
   position: absolute;
   bottom: 0px;
   margin-top: 100px;
+}
+
+.bottom-footer h2 {
+  text-align: left;
+  vertical-align: top;
+}
+
+.contact-us {
+  margin-right: 5%;
+  vertical-align: top;
+  font-size: 12px;
+  display: inline-block;
+  width: 20%;
+}
+
+.footer-nav {
+  margin-left: 25vw;
+  display: block;
+}
+
+.footer-nav-item {
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  margin-left: 25px;
+  font-size: 15px;
+  color: cornsilk;
 }

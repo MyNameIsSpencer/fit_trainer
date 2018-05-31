@@ -53,6 +53,7 @@ class Step1 extends Component {
               <th className="descriptor">
                 {this.state.descriptor}
               </th>
+
             </tr>
           </tbody>
         </table>

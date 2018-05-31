@@ -44,19 +44,6 @@ header {
   color: rgb(230,168,23);
 }
 
-.bottom-footer {
-  padding: 20px var(--centreMargin);
-  margin-top: 100px;
-  bottom: 0;
-  height: 150px;
-  width: 100%;
-  background-color: RGB(230,168,23);
-}
-
-.bottom-footer p {
-  white-space: pre;
-}
-
 .top-logo {
   margin-left: var(--centreMargin);
   margin-top: 10px;
@@ -68,7 +55,8 @@ header {
 }
 
 .top-info {
-  margin-left: calc(var(--centreMargin) + 150px);
+  font-weight: normal;
+  right: var(--centreMargin);
   font-size: 15px;
   margin-top: 30px;
   top: 0px;
@@ -121,6 +109,11 @@ header {
   position: absolute;
   right: 20px;
 
+}
+
+.spacer {
+  white-space: pre;
+  color: rgb(230,170,0);
 }
 
 .small-nav-header {

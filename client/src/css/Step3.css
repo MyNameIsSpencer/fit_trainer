@@ -5,40 +5,42 @@ form {
 label {
   text-align: left;
   display: inline-block;
-  width: 200px;
+  width: 250px;
   text-align: right;
 }
 
 input, select {
+  display: inline-block;
   margin-bottom: 6px;
-  height: 15px;
+  height: 25px;
+  width: 150px;
 }
 
 input[type="submit"] {
   display: block;
-  margin-top: 10px;
-  margin-left: 11%;
-  border: 5px inset green;
-  background-color: lightgreen;
+  margin-top: 20px;
+  margin-left: 50px;
+  border: 5px inset darkgrey;
+  background-color: lightgrey;
   font-size: 20px;
-  color: white;
+  color: black;
   width: 200px;
   height: 40px;
 
 }
 
 select {
-  width: 123px;
   padding-bottom: 5px;
-}
-
-input[type="text email tel"] {
-  width: 120px;
 }
 
 input[type="textarea"] {
  height: 100px;
  width: 200px;
+}
+
+.step3-select {
+  height: 25px;
+  width: 155px;
 }
 
 .message-label {
@@ -52,7 +54,7 @@ input[type="textarea"] {
 }
 
 .left-wrapper {
-  width: 30%;
+  width: 300px;
   display: inline-block;
   vertical-align: top;
 }

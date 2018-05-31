@@ -61,14 +61,13 @@ class About extends Component {
               <li>Lose weight or</li>
               <li>Become more active?</li>
             </ul>
+            <br/>
             <p>We <b>support</b> you</p>
             <ul>
               <li>One-on-one or</li>
               <li>In small groups</li>
             </ul>
 
-            <br/>
-            <br/>
             <br/>
 
             <h1 className="heading"> Contact Us Today For Your <b>FREE</b> Consultaion!</h1>
@@ -84,6 +83,8 @@ class About extends Component {
               or email: biologicfitnessandhealth@gmail.com<br/><br/>
 
               Let BioLogic Fitness and Health help you <b>Reinvigorate Your Life!</b>
+              <br/>
+              <br/>
             </p>
 
           </div>
