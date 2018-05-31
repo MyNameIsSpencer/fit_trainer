@@ -24,6 +24,16 @@ class Step3 extends Component {
     this.handleContactFormSubmit = this.handleContactFormSubmit.bind(this);
   }
 
+  clearContactForm(e) {
+    e.preventDefault();
+    this.setState({
+      name: '',
+      email: '',
+      phone: '',
+      message: ''
+    })
+  }
+
   handleContactFormSubmit(e) {
     e.preventDefault();
     // const message = {
@@ -47,8 +57,10 @@ class Step3 extends Component {
     })
     .then(res => {
       console.log('HuurrAAAYYY');
+      alert('Email has been sent');
     })
   }
+
 
   onChange(e) {
     e.preventDefault();
