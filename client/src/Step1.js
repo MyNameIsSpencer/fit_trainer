@@ -17,12 +17,11 @@ const optionDescriptions = {
 }
 
 const optionPics = {
-  default: "",
   loseWeight: apple,
   reduceStress: dog,
-  improveHealth: "Get healthier, save MONEY!!!$$$",
-  getFitter: "Get in the best shape of your LIFE!",
-  notSure: "Not sure? Not problem!!  Come meet with us and we'll help you plan out your goals"
+  improveHealth: bencher,
+  getFitter: getFitterPic,
+  notSure: babies
 }
 
 class Step1 extends Component {
@@ -34,10 +33,11 @@ class Step1 extends Component {
     }
   }
 
-  handleClick (e, descriptor) {
+  handleClick (e, descriptor, picture) {
     console.log(descriptor);
     this.setState({
-      descriptor: descriptor
+      descriptor: descriptor,
+      picture: picture
     })
     this.props.updateGoal(e)
   }
@@ -51,15 +51,15 @@ class Step1 extends Component {
         </h2>
 
         <ul className="home-ul">
-          <li><button value="loseWeight" onClick={(e) => this.handleClick(e, optionDescriptions.loseWeight)}>
+          <li><button value="loseWeight" onClick={(e) => this.handleClick(e, optionDescriptions.loseWeight, optionPics.loseWeight)}>
               Lose Weight </button></li>
-          <li><button value="reduceStress" onClick={(e) => this.handleClick(e, optionDescriptions.reduceStress)}>
+          <li><button value="reduceStress" onClick={(e) => this.handleClick(e, optionDescriptions.reduceStress, optionPics.reduceStress)}>
               Reduce Stress</button></li>
-          <li><button value="improveHealth" onClick={(e) => this.handleClick(e, optionDescriptions.improveHealth)}>
+          <li><button value="improveHealth" onClick={(e) => this.handleClick(e, optionDescriptions.improveHealth, optionPics.improveHealth)}>
             Improve Health</button></li>
-          <li><button value="getFitter" onClick={(e) => this.handleClick(e, optionDescriptions.getFitter)}>
+          <li><button value="getFitter" onClick={(e) => this.handleClick(e, optionDescriptions.getFitter, optionPics.getFitter)}>
             Get Fitter</button></li>
-          <li><button value="notSure" onClick={(e) => this.handleClick(e, optionDescriptions.notSure)}>
+          <li><button value="notSure" onClick={(e) => this.handleClick(e, optionDescriptions.notSure, optionPics.notSure)}>
             Not Sure</button></li>
         </ul>
 

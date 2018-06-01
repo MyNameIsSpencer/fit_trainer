@@ -2,7 +2,7 @@ h2 {
   text-align: center;
 }
 
-.top-pic {
+#top-pic {
   position: relative;
   display: block;
   overflow: hidden;
@@ -11,7 +11,7 @@ h2 {
   /* padding-top: calc((var(--headerHeight)) + 20px); */
 }
 
-.top-pic img{
+#top-pic img{
   /* margin-left: -20px; */
   position: absolute;
   top: 0;
@@ -28,7 +28,7 @@ h2 {
 }
 
 .titler {
-  margin-top: -20px;
+  margin-top: 20px;
 }
 
 .steps {

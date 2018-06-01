@@ -52,10 +52,16 @@
 .step1-pic {
   display: block;
   text-align: left;
-  margin-top: 60px;
+  margin-top: 50px;
   width: 300px;
-
 }
+
+.step1-pic img {
+  max-height: 200px;
+  max-width: 300px;
+}
+
+.step1-pic
 
 .left-table {
   display: block;

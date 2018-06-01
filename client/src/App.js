@@ -4,6 +4,7 @@ import {
 } from 'react-router-dom';
 
 import React, { Component } from 'react';
+import Scroller from './Scroller.js';
 import Home from './Home.js';
 import Services from './Services.js';
 import About from './About.js';

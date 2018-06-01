@@ -32,7 +32,7 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <div className="top-pic">
+        <div id="top-pic">
           <img src={thumbsup} alt="thumbsup"/>
         </div>
         <h2 className="titler"> BioLogic Fitness and Health </h2>
