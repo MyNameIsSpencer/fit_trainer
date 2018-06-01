@@ -39,7 +39,7 @@ class About extends Component {
             <hr/>
 
             <p>
-              Convenient: We come to you!  We are a <b>home-based service</b> located in teh East Scarborough/Pickering area.
+              Convenient: We come to you!  We are a <b>home-based service</b> located in the East Scarborough/Pickering area.
               We focus all of our attention on you.  No need for expensive equipment to get and stay fit!
             </p>
             <p>

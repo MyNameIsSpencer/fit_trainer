@@ -8,6 +8,7 @@ h2 {
   overflow: hidden;
   width: 100%;
   height: 50vw;
+  transition: 700ms ease;
   /* padding-top: calc((var(--headerHeight)) + 20px); */
 }
 
@@ -28,7 +29,7 @@ h2 {
 }
 
 .titler {
-  margin-top: 20px;
+  margin-top: 200px;
 }
 
 .steps {

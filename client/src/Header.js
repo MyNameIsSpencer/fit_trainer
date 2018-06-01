@@ -14,7 +14,7 @@ class Header extends Component {
 
   render() {
     return(
-      <header>
+      <header id="theHeader">
 
           <nav className="nav-header">
             <Link to="/" className={"list-item"}>Home</Link>

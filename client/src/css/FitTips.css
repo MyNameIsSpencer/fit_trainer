@@ -1,0 +1,23 @@
+.youtuber {
+  margin: 50px
+}
+
+.youtuber iframe {
+  display: inline-block;
+}
+
+.youtuber .youtube-description {
+  display: inline-block;
+}
+
+.youtube-righter {
+  vertical-align: top;
+  margin-left: 50px;
+  display: inline-block;
+  text-align: left;
+}
+
+.youtube-righter h2, .youtube-righter p {
+  text-align: left;
+  max-width: 700px;
+}

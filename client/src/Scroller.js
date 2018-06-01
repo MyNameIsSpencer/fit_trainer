@@ -4,9 +4,12 @@ function yScroll(){
   let yPos = window.pageYOffset;
 
   let topPic = document.getElementById('top-pic');
+  let theHeader = document.getElementById('theHeader');
 
-  if (yPos > 100) {
-    topPic.style.height = "0px";
+  if (topPic && yPos > 70) {
+    topPic.style.height = "2vw";
+  } else if (topPic && yPos < 70) {
+    topPic.style.height = "50vw";
   }
 
 }
