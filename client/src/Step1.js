@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import './css/Step1.css';
 import apple from './pics/apple.jpeg';
+import dog from './pics/dog2.jpg';
+import bencher from './pics/bencher.jpg';
+import getFitterPic from './pics/get-fit.png';
+import babies from './pics/babies.jpeg';
 
 
 const optionDescriptions = {
@@ -12,12 +16,21 @@ const optionDescriptions = {
   notSure: "Not sure? Not problem!!  Come meet with us and we'll help you plan out your goals"
 }
 
+const optionPics = {
+  default: "",
+  loseWeight: apple,
+  reduceStress: dog,
+  improveHealth: "Get healthier, save MONEY!!!$$$",
+  getFitter: "Get in the best shape of your LIFE!",
+  notSure: "Not sure? Not problem!!  Come meet with us and we'll help you plan out your goals"
+}
+
 class Step1 extends Component {
   constructor(props) {
     super(props);
     this.state = {
       descriptor: optionDescriptions.default,
-      picture: apple
+      picture: babies
     }
   }
 
