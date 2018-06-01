@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import './css/Step1.css'
+import './css/Step1.css';
+import apple from './pics/apple.jpeg';
+
 
 const optionDescriptions = {
   default: "Choose your goal from the options on the left",
@@ -14,7 +16,8 @@ class Step1 extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      descriptor: optionDescriptions.default
+      descriptor: optionDescriptions.default,
+      picture: apple
     }
   }
 
@@ -29,34 +32,33 @@ class Step1 extends Component {
 
   render() {
     return (
-      <div className="whiteback">
+      <div className="step1">
         <h2 className="lefter">
           <b className="spacer">Step 1    </b>Choose Your Goal: "I want to..."
         </h2>
-        <table>
-          <tbody>
-            <tr>
-              <th className="seperator">
-                <ul className="home-ul">
-                  <li><button value="loseWeight" onClick={(e) => this.handleClick(e, optionDescriptions.loseWeight)}>
-                      Lose Weight </button></li>
-                  <li><button value="reduceStress" onClick={(e) => this.handleClick(e, optionDescriptions.reduceStress)}>
-                      Reduce Stress</button></li>
-                  <li><button value="improveHealth" onClick={(e) => this.handleClick(e, optionDescriptions.improveHealth)}>
-                    Improve Health</button></li>
-                  <li><button value="getFitter" onClick={(e) => this.handleClick(e, optionDescriptions.getFitter)}>
-                    Get Fitter</button></li>
-                  <li><button value="notSure" onClick={(e) => this.handleClick(e, optionDescriptions.notSure)}>
-                    Not Sure</button></li>
-                </ul>
-              </th>
-              <th className="descriptor">
-                {this.state.descriptor}
-              </th>
 
-            </tr>
-          </tbody>
-        </table>
+        <ul className="home-ul">
+          <li><button value="loseWeight" onClick={(e) => this.handleClick(e, optionDescriptions.loseWeight)}>
+              Lose Weight </button></li>
+          <li><button value="reduceStress" onClick={(e) => this.handleClick(e, optionDescriptions.reduceStress)}>
+              Reduce Stress</button></li>
+          <li><button value="improveHealth" onClick={(e) => this.handleClick(e, optionDescriptions.improveHealth)}>
+            Improve Health</button></li>
+          <li><button value="getFitter" onClick={(e) => this.handleClick(e, optionDescriptions.getFitter)}>
+            Get Fitter</button></li>
+          <li><button value="notSure" onClick={(e) => this.handleClick(e, optionDescriptions.notSure)}>
+            Not Sure</button></li>
+        </ul>
+
+        <div className="displayer">
+          <div className="descriptor">
+            {this.state.descriptor}
+          </div>
+          <div className="step1-pic">
+            <img src={this.state.picture} alt="thumbsup"/>
+          </div>
+        </div>
+
       </div>
     )
   }

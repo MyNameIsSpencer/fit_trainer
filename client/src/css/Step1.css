@@ -1,9 +1,14 @@
+.step1 {
+  text-align: left;
+}
+
 .seperator {
   border-right: 10px solid firebrick;
 }
 
 .home-ul {
   display: inline-block;
+  border-right: 10px solid firebrick;
 }
 
 .home-ul li {
@@ -19,18 +24,6 @@
   text-align: center;
 }
 
-.whiteback {
-  background: cornsilk;
-  padding: 0;
-  margin: 0;
-}
-
-.descriptor {
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-}
-
 .home-ul li button:hover{
   background-color: lightgreen;
   color: white;
@@ -40,4 +33,31 @@
   background-color: dimgray;
   color: white;
   /* border-right: 10px solid firebrick; */
+}
+
+.displayer {
+  vertical-align: top;
+  height: 100%;
+  padding: 20px;
+  display: inline-block;
+}
+
+.descriptor {
+  vertical-align: top;
+  display: block;
+  height: 50px;
+  width: 300px;
+}
+
+.step1-pic {
+  display: block;
+  text-align: left;
+  margin-top: 60px;
+  width: 300px;
+
+}
+
+.left-table {
+  display: block;
+  vertical-align: top;
 }
