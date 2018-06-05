@@ -1,15 +1,11 @@
 const express = require('express');
 const nodemailer = require('nodemailer');
 const cors = require('cors');
+const path = require('path');
 
 const app = express();
 const port = process.env.PORT || 5000;
 
-{/*}
-app.get('/api/hello', (req, res) => {
-  res.send({ express: 'Hello From Express' });
-});
-*/}
 
 app.use(cors());
 app.use(express.json());
@@ -48,6 +44,17 @@ app.post('/api/mail', (req, res) => {
     }
   });
 });
+
+/**
+ * Installs routes that serve production-bundled client-side assets.
+ * It is set up to allow for HTML5 mode routing (404 -> /dist/index.html).
+ * This should be the last router in your express server's chain.
+ * Change dist to build.
+ */
+const buildPath = path.join(__dirname, './client/build');
+const indexFileName = 'index.html';
+app.use(express.static(buildPath));
+app.get('*', (req, res) => res.sendFile(path.join(buildPath, indexFileName)));
 
 
 
