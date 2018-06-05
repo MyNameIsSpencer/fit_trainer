@@ -38,7 +38,7 @@ class Step3 extends Component {
       ...this.state,
       ...this.props
     }
-    fetch('http://localhost:5000/api/mail', {
+    fetch('/api/mail', {
       method: 'POST',
       body: JSON.stringify(emailPackage),
       headers: new Headers({
