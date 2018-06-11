@@ -38,6 +38,8 @@ class Step3 extends Component {
       ...this.state,
       ...this.props
     }
+    console.log('>>>>', 'new code');
+    debugger;
     fetch('/api/mail', {
       method: 'POST',
       body: JSON.stringify(emailPackage),
