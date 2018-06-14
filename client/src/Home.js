@@ -33,7 +33,7 @@ class Home extends Component {
     return (
       <div>
         <div id="top-pic">
-          <img src={thumbsup} alt="thumbsup"/>
+          
         </div>
         <h2 className="titler"> BioLogic Fitness and Health </h2>
         <div className="centre-column">
