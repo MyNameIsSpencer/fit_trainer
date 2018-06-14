@@ -15,7 +15,7 @@ class FitTips extends Component {
       <div>
         <Youtuber url="https://www.youtube.com/embed/nJEP2CE8oGM" title="Chair Exercise" description="Turn your chair into a grueling training regimen"/>
         <Youtuber url="https://www.youtube.com/embed/6gOv516iooU"  title="Seated Hip Flexion" description="Sit on the chair and get those hips flexing"/>
-        <Youtuber url="https://www.youtube.com/embed/mQLzNf8VOIc" title="Band Exercises" description="Lot's o exercises with bands that will get you burning!"/>
+        <Youtuber url="https://www.youtube.com/embed/mQLzNf8VOIc" title="Standing Exercises" description="Lot's o standing exercises that will get you burning!"/>
       </div>
     )
   }
