@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import thumbsup from './pics/thumbsupcrop.jpg';
 import on_bike_crop from './pics/on_bike_crop.jpg';
 import Step1 from './Step1';
 import Step2 from './Step2';
@@ -33,7 +32,7 @@ class Home extends Component {
     return (
       <div>
         <div id="top-pic">
-          
+
         </div>
         <h2 className="titler"> BioLogic Fitness and Health </h2>
         <div className="centre-column">
